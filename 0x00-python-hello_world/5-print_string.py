@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-number = 98
+str = "Holberton School"
 # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
-print(f"{number:d} Battery street")
+print(str*3 + str[:9])
