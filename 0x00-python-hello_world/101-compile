@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# making -z test
+if [ -z "$PYFILE" ]; then
+    echo "Error: Environment variable \$PYFILE is not set."
+    exit 1
+fi
+
+# Making -f test: to Ensure the file specified in $PYFILE exists
+if [ ! -f "$PYFILE" ]; then
+    echo "Error: File \"$PYFILE\" does not exist."
+    exit 1
+fi
+
+# Extract the filename (without the path) from $PYFILE
+FILENAME=$(basename "$PYFILE")
+
+# Compile the Python script and generate the .pyc file
+python3 -c "import py_compile; py_compile.compile('$PYFILE', cfile='${FILENAME}c')"
+
+# check the exit status of the previous program
+# if equal 0 then print Compilation complete
+if [ $? -eq 0 ]; then
+    echo "Compilation complete."
+else
+    echo "Compilation failed."
+fi
