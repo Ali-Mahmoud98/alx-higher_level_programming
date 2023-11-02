@@ -37,5 +37,24 @@ __import__("0-add")
 guillaume@ubuntu:~/0x02$ python3 0-import_add.py 
 guillaume@ubuntu:~/0x02$ 
 ```
+### 1. My first toolbox!
+Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
 
-
+* Do not use the function print (with string format to display integers) more than 4 times
+* You have to define:
+    * the value 10 to a variable a
+    * the value 5 to a variable b
+    * and use those two variables only, as arguments when calling functions (including print)
+* a and b must be defined in 2 different lines: a = 10 and another b = 5
+* Your program should call each of the imported functions. See example below for format
+* the word calculator_1 should be used only once in your file
+* You are not allowed to use * for importing or __import__
+* Your code should not be executed when imported
+```
+guillaume@ubuntu:~/0x02$ ./1-calculation.py
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2
+guillaume@ubuntu:~/0x02$
+```
