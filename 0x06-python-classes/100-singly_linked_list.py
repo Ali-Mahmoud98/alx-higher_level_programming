@@ -70,6 +70,6 @@ class SinglyLinkedList:
         vals = []
         tmp_node = self.__head
         while tmp_node is not None:
-            vals.append(tmp_node.data)
+            vals.append(str(tmp_node.data))
             tmp_node = tmp_node.next_node
         return ('\n'.join(vals))
