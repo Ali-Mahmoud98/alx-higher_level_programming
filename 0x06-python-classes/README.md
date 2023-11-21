@@ -230,7 +230,7 @@ guillaume@ubuntu:~/0x06$ ./5-main.py
 --
 guillaume@ubuntu:~/0x06$ 
 ```
-## 6. Coordinates of a square
+## [6. Coordinates of a square](6-square.py)
 Write a class Square that defines a square by: (based on 5-square.py)
 
 Private instance attribute: size:
