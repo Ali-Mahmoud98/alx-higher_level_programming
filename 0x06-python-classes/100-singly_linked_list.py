@@ -2,11 +2,12 @@
 
 """Define classes for a singly-linked list."""
 
+
 class Node:
     """singly-linked list node"""
     def __init__(self, data, next_node=None):
         """init new node
-        
+
         Args:
             data (int): data of node
             next_node: the next node of the current node
@@ -29,12 +30,13 @@ class Node:
     def next_node(self):
         """getter to retrieve next node"""
         return self.__next_node
-    
+
     @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
 
 class SinglyLinkedList:
     """Singly Linked List"""
