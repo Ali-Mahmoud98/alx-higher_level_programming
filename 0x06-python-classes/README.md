@@ -17,7 +17,7 @@ guillaume@ubuntu:~/0x06$ ./0-main.py
 {}
 guillaume@ubuntu:~/0x06$ 
 ```
-## 1. Square with size
+## 1. [Square with size](1-square.py)
 Write a class Square that defines a square by: (based on 0-square.py)
 
 * Private instance attribute: size
