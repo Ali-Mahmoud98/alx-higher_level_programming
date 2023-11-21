@@ -50,7 +50,7 @@ guillaume@ubuntu:~/0x06$ ./1-main.py
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
 ```
-## 2. Size validation
+## [2. Size validation](2-square.py)
 Write a class Square that defines a square by: (based on 1-square.py)
 
 * Private instance attribute: size
@@ -106,7 +106,7 @@ size must be an integer
 size must be >= 0
 guillaume@ubuntu:~/0x06$ 
 ```
-## 3. Area of a square
+## [3. Area of a square](3-square.py)
 Write a class Square that defines a square by: (based on 2-square.py)
 
 * Private instance attribute: size
@@ -143,7 +143,7 @@ Area: 9
 Area: 25
 guillaume@ubuntu:~/0x06$ 
 ```
-## 4. Access and update private attribute
+## [4. Access and update private attribute](4-square.py)
 Write a class Square that defines a square by: (based on 3-square.py)
 
 * Private instance attribute: size:
@@ -177,7 +177,7 @@ Area: 9 for size: 3
 size must be an integer
 guillaume@ubuntu:~/0x06$ 
 ```
-## 5. Printing a square
+## [5. Printing a square](5-square.py)
 Write a class Square that defines a square by: (based on 4-square.py)
 
 * Private instance attribute: size:

@@ -22,6 +22,12 @@ class Square:
         """Return the current area of the square."""
         return (self.__size * self.__size)
 
+    @property
+    def size(self):
+        """GET/SET current size of the Square"""
+        return self.__size
+
+    @size.setter
     def size(self, value):
         """Update size"""
         if not isinstance(value, int):
