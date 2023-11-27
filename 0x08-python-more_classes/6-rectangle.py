@@ -10,6 +10,7 @@ class Rectangle:
     Rectangle class with hight and width attributes
     """
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
         initiate properties
@@ -99,4 +100,5 @@ class Rectangle:
 
     def __del__(self):
         """Destractor"""
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
