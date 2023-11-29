@@ -251,7 +251,7 @@ guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/5-text_indentation.txt
 guillaume@ubuntu:~/0x07$ 
 ```
 ## 5. Max integer - Unittest
-### files: [6-max_integer_test.py](tests/6-max_integer_test.py)
+### files: [6-max_integer_test.py](tests/6-max_integer_test.py) | [6-max_integer.py](6-max_integer.py)
 Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
 
 In this task, you will write unittests for the function `def max_integer(list=[]):`.
