@@ -338,3 +338,26 @@ guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/100-matrix_mul.txt | tail
 Test passed.
 guillaume@ubuntu:~/0x07$ 
 ```
+## 7. Lazy matrix multiplication
+### files: [101-lazy_matrix_mul.py](101-lazy_matrix_mul.py) | [101-lazy_matrix_mul.txt]( tests/101-lazy_matrix_mul.txt) 
+Write a function that multiplies 2 matrices by using the module NumPy
+
+To install it: `pip3 install numpy==1.15.0`
+
+Prototype: `def lazy_matrix_mul(m_a, m_b):`
+Test cases should be the same as `100-matrix_mul` but with new exception type/message
+```
+guillaume@ubuntu:~/0x07$ cat 101-main.py
+#!/usr/bin/python3
+lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+print(lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+print(lazy_matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+
+guillaume@ubuntu:~/0x07$ ./101-main.py 
+[[ 7 10]
+ [15 22]]
+[[13 16]]
+guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/101-lazy_matrix_mul.txt 
+guillaume@ubuntu:~/0x07$ 
+```
