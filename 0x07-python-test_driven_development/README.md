@@ -200,10 +200,10 @@ guillaume@ubuntu:~/0x07$
 ### files: [5-text_indentation.py](5-text_indentation.py) | [5-text_indentation.txt](tests/5-text_indentation.txt)
 Write a function that prints a text with 2 new lines after each of these characters: `.`, `?` and `:`
 
-Prototype: `def text_indentation(text):`
-text must be a string, otherwise raise a `TypeError` exception with the `message text must be a string`
-There should be no space at the beginning or at the end of each printed line
-You are not allowed to import any module
+* Prototype: `def text_indentation(text):`
+* text must be a string, otherwise raise a `TypeError` exception with the `message text must be a string`
+* There should be no space at the beginning or at the end of each printed line
+* You are not allowed to import any module
 ```
 guillaume@ubuntu:~/0x07$ cat 5-main.py
 #!/usr/bin/python3
@@ -256,12 +256,12 @@ Since the beginning you have been creating “Interactive tests”. For this exe
 
 In this task, you will write unittests for the function `def max_integer(list=[]):`.
 
-Your test file should be inside a folder `tests`
-You have to use the `unittest module`
-Your test file should be python files (extension: .py)
-Your test file should be executed by using this command: `python3 -m unittest tests.6-max_integer_test`
-All tests you make must be passable by the function below
-We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+* Your test file should be inside a folder `tests`
+* You have to use the `unittest module`
+* Your test file should be python files (extension: .py)
+* Your test file should be executed by using this command: `python3 -m unittest tests.6-max_integer_test`
+* All tests you make must be passable by the function below
+* We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 ```
 guillaume@ubuntu:~/0x07$ cat 6-max_integer.py
 #!/usr/bin/python3
@@ -308,4 +308,33 @@ max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
 guillaume@ubuntu:~/0x07$ 
 ```
+## 6. Matrix multiplication
+### files: [100-matrix_mul.py](100-matrix_mul.py) | [100-matrix_mul.txt](tests/100-matrix_mul.txt) 
+Write a function that multiplies 2 matrices:
 
+* Prototype: def matrix_mul(m_a, m_b):
+* `m_a` and `m_b` must be validated with these requirements in this order
+* `m_a` and `m_b` must be an list of lists of integers or floats:
+    * if `m_a` or `m_b` is not a list: raise a `TypeError` exception with the message `m_a must be a list` or `m_b must be a list`
+    * if `m_a` or `m_b` is not a list of lists: raise a `TypeError` exception with the `message m_a must be a list of lists` or `m_b must be a list of lists`
+    * if `m_a` or `m_b` is empty (it means: `= []` or `= [[]]`): raise a `ValueError` exception with the message `m_a can't be empty` or `m_b can't be empty`
+    * if one element of those list of lists is not an integer or a float: raise a `TypeError` exception with the message `m_a should contain only integers or floats` or `m_b should contain only integers or floats`
+    * if `m_a` or `m_b` is not a rectangle (all ‘rows’ should be of the same size): raise a `TypeError` exception with the message `each row of m_a must be of the same size` or `each row of m_b must be of the same size`
+* If `m_a` and `m_b` can’t be multiplied: raise a `ValueError` exception with the message `m_a and m_b can't be multiplied`
+* You are not allowed to import any module.
+```
+guillaume@ubuntu:~/0x07$ cat 100-main.py
+#!/usr/bin/python3
+matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+
+guillaume@ubuntu:~/0x07$ ./100-main.py 
+[[7, 10], [15, 22]]
+[[13, 16]]
+guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/100-matrix_mul.txt | tail -2
+6 passed and 0 failed.
+Test passed.
+guillaume@ubuntu:~/0x07$ 
+```
