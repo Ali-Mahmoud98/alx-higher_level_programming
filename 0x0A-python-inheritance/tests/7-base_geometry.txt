@@ -23,6 +23,7 @@ Test Case 1: passing two string parameters
 
 Test Case 2: passing boolean to second parameter
 ::
+    >>>bg = BaseGeometry()
     >>>bg.integer_validator("Hello", True)
     Traceback (most recent call last):
     	      ...
@@ -30,6 +31,7 @@ Test Case 2: passing boolean to second parameter
 
 Test Case 3: passing zero to second parameter
 ::
+    >>>bg = BaseGeometry()
     >>>bg.integer_validator("Hello", 0)
     Traceback (most recent call last):
     	      ...
@@ -37,6 +39,7 @@ Test Case 3: passing zero to second parameter
 
 Test Case 4: passing negative to second parameter
 ::
+    >>>bg = BaseGeometry()
     >>>bg.integer_validator("Hello", -9)
     Traceback (most recent call last):
     	      ...
@@ -44,6 +47,7 @@ Test Case 4: passing negative to second parameter
 
 Test Case 5: passing positive to second parameter
 ::
+    >>>bg = BaseGeometry()
     >>>bg.integer_validator("Hello", 9)
 
 Test Case 6: Passing one argument to integer_validator
