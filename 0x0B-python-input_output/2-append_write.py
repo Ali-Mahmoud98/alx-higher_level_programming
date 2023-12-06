@@ -2,7 +2,7 @@
 """Defines a function that append a string to a text file."""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """Function append a string to the end of a text file (UTF8).
 
     Args:
