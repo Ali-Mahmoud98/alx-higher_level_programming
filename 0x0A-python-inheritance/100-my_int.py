@@ -6,8 +6,8 @@ class MyInt(int):
     """Class MyInt drived from int."""
     def __eq__(self, val):
         """Overrides == to !=."""
-        return self.real != val 
+        return self.real != val
 
     def __ne__(self, val):
         """Overrides != to ==."""
-        return self.real == val 
+        return self.real == val
