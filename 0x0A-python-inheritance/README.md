@@ -219,9 +219,9 @@ guillaume@ubuntu:~/0x0A$
 **Files:** [8-rectangle.py](8-rectangle.py)
 Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`).
 
-* Instantiation with width and height: def __init__(self, width, height):
-* width and height must be private. No getter or setter
-* width and height must be positive integers, validated by integer_validator
+* Instantiation with `width` and `height`: `def __init__(self, width, height):`
+    * `width` and `height` must be private. No getter or setter
+    * `width` and `height` must be positive integers, validated by `integer_validator`
 ```
 guillaume@ubuntu:~/0x0A$ cat 8-main.py
 #!/usr/bin/python3
@@ -247,5 +247,29 @@ guillaume@ubuntu:~/0x0A$ ./8-main.py
 ['_Rectangle__height', '_Rectangle__width', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'area', 'integer_validator']
 [AttributeError] 'Rectangle' object has no attribute 'width'
 [TypeError] height must be an integer
+guillaume@ubuntu:~/0x0A$ 
+```
+## 9. Full rectangle
+**Files:** [9-rectangle.py](9-rectangle.py)
+Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`). (task based on `8-rectangle.py`)
+
+* Instantiation with `width` and `height`: `def __init__(self, width, height):`
+    * `width` and `height` must be private. No getter or setter
+    * `width` and `height` must be positive integers, validated by `integer_validator`
+* the `area()` method must be implemented
+* `print()` should print, and `str()` should return, the following rectangle description: `[Rectangle] <width>/<height>`
+```
+guillaume@ubuntu:~/0x0A$ cat 9-main.py
+#!/usr/bin/python3
+Rectangle = __import__('9-rectangle').Rectangle
+
+r = Rectangle(3, 5)
+
+print(r)
+print(r.area())
+
+guillaume@ubuntu:~/0x0A$ ./9-main.py
+[Rectangle] 3/5
+15
 guillaume@ubuntu:~/0x0A$ 
 ```
