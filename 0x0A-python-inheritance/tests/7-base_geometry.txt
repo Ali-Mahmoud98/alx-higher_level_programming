@@ -1,54 +1,55 @@
-BaseGeometry Module Testing
-===========================
+``BaseGeometry Module`` Testing
+===============================
 
-Testing BaseGeometry Class
-==========================
+Testing ``BaseGeometry`` Class
+==============================
 
-Testing area() Function
+Testing ``area()`` Function
 ::
-    >>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
-    >>>bg = BaseGeometry()
-    >>>bg.area()
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
+    >>> bg.area()
     Traceback (most recent call last):
     	      ...
     Exception: area() is not implemented
 
-Testing integer_validator() function
+Testing ``integer_validator()`` function
 Test Case 1: passing two string parameters
 ::
-    >>>bg.integer_validator("Bla", "20")
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Bla", "20")
     Traceback (most recent call last):
     	      ...
     TypeError: Bla must be an integer
 
 Test Case 2: passing boolean to second parameter
 ::
-    >>>bg = BaseGeometry()
-    >>>bg.integer_validator("Hello", True)
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Hello", True)
     Traceback (most recent call last):
     	      ...
     TypeError: Hello must be an integer
 
 Test Case 3: passing zero to second parameter
 ::
-    >>>bg = BaseGeometry()
-    >>>bg.integer_validator("Hello", 0)
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Hello", 0)
     Traceback (most recent call last):
     	      ...
     TypeError: Hello must be greater than 0
 
 Test Case 4: passing negative to second parameter
 ::
-    >>>bg = BaseGeometry()
-    >>>bg.integer_validator("Hello", -9)
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Hello", -9)
     Traceback (most recent call last):
     	      ...
     TypeError: Hello must be greater than 0
 
 Test Case 5: passing positive to second parameter
 ::
-    >>>bg = BaseGeometry()
-    >>>bg.integer_validator("Hello", 9)
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Hello", 9)
 
 Test Case 6: Passing one argument to integer_validator
 ::
