@@ -272,3 +272,26 @@ guillaume@ubuntu:~/0x0B$ ./6-main.py
 [ValueError] Expecting property name enclosed in double quotes: line 1 column 21 (char 20)
 guillaume@ubuntu:~/0x0B$ 
 ```
+## 7. Load, add, save
+**Files:** [7-add_item.py](7-add_item.py)
+Write a script that adds all arguments to a Python list, and then save them to a file:
+
+* You must use your function `save_to_json_file` from `5-save_to_json_file.py`
+* You must use your function `load_from_json_file` from `6-load_from_json_file.py`
+* The list must be saved as a JSON representation in a file named `add_item.json`
+* If the file doesn’t exist, it should be created
+* You don’t need to manage file permissions / exceptions.
+```
+guillaume@ubuntu:~/0x0B$ cat add_item.json
+cat: add_item.json: No such file or directory
+guillaume@ubuntu:~/0x0B$ ./7-add_item.py
+guillaume@ubuntu:~/0x0B$ cat add_item.json ; echo ""
+[]
+guillaume@ubuntu:~/0x0B$ ./7-add_item.py Best School
+guillaume@ubuntu:~/0x0B$ cat add_item.json ; echo ""
+["Best", "School"]
+guillaume@ubuntu:~/0x0B$ ./7-add_item.py 89 Python C
+guillaume@ubuntu:~/0x0B$ cat add_item.json ; echo ""
+["Best", "School", "89", "Python", "C"]
+guillaume@ubuntu:~/0x0B$ 
+```
