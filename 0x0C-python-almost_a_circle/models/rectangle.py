@@ -19,10 +19,10 @@ class Rectangle(Base):
                                 Defaults to None.
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def height(self):
