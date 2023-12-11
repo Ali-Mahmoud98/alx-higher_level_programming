@@ -142,6 +142,20 @@ class Rectangle(Base):
         """Method that prints in stdout the
         Rectangle instance with the character #
         """
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+
         print("\n" * self.y, end='')
         for i in range(self.height):
             print("{}{}".format(self.x * " ", self.width * "#"))
+
+    def __str__(self):
+        """Prints string representation of the rectangle.
+
+        Returns:
+            str: [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
