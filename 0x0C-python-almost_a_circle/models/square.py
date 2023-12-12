@@ -39,3 +39,34 @@ class Square(Rectangle):
         """Return the print() and str() representation of a Square."""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+
+    def update(self, *args, **kwargs):
+        """Method to update Square attributes
+
+        Args:
+            *args (ints): New attribute values.
+                - id-> arg1
+                - size-> arg2
+                - x-> arg3
+                - y-> arg4
+            **kwargs (dict): New key/value pairs of attributes.
+        """
+        for key, value in enumerate(args):
+            if key == 0:
+                self.id = value
+            elif key == 1:
+                self.size = value
+            elif key == 2:
+                self.x = value
+            elif key == 3:
+                self.y = value
+
+        for key, value in kwargs.items():
+            if key == "id":
+                self.id = value
+            elif key == "size":
+                self.size = value
+            elif key == "x":
+                self.x = value
+            elif key == "y":
+                self.y = value
