@@ -24,7 +24,7 @@ Read:
 3- [2-arguments.js](2-arguments.js)
 4- [3-value_argument.js](3-value_argument.js)
 5- [4-concat.js](4-concat.js)
-6- []()
+6- [5-to_integer.js](5-to_integer.js)
 7- []()
 8- []()
 9- []()
