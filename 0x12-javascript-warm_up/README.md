@@ -34,3 +34,5 @@ Read:
 13- [12-object.js](12-object.js)
 14- [13-main.js](13-main.js)
 15- [13-add.js](13-add.js)
+15- [100-main.js](100-main.js)
+15- [100-let_me_const.js](100-let_me_const.js)
