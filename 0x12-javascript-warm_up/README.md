@@ -29,3 +29,4 @@ Read:
 8- [7-multi_c.js](7-multi_c.js)
 9- [8-square.js](8-square.js)
 10- [9-add.js](9-add.js)
+10- [10-factorial.js](10-factorial.js)
