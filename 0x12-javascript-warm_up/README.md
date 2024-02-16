@@ -30,3 +30,4 @@ Read:
 9- [8-square.js](8-square.js)
 10- [9-add.js](9-add.js)
 10- [10-factorial.js](10-factorial.js)
+10- [11-second_biggest.js](11-second_biggest.js)
